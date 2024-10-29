@@ -1,4 +1,0 @@
-py3Dmol
-numpy
-rdkit
-pandas
