@@ -1,0 +1,5 @@
+name: stchview
+channels:
+     - conda-forge
+dependencies:
+     - xtb
