@@ -2,4 +2,11 @@ name: stchview
 channels:
      - conda-forge
 dependencies:
+     - python=3.11.5
+     - pip
+     - streamlit
      - xtb
+     - py3Dmol
+     - numpy
+     - rdkit
+     - pandas
