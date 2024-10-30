@@ -5,5 +5,7 @@ dependencies:
      - python=3.11.5
      - pip
      - xtb
+     - py3dmol
+     - rdkit
      - numpy
      - pandas
