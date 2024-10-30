@@ -6,12 +6,12 @@ import streamlit.components.v1 as components
 import subprocess
 import tempfile
 import os
-import sys
+# import sys
 
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-install('rdkit')
-install('py3Dmol')
+# def install(package):
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+# install('rdkit')
+# install('py3Dmol')
 
 import py3Dmol
 from rdkit import Chem
