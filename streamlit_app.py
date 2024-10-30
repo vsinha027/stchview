@@ -1,15 +1,21 @@
 import streamlit as st
-import py3Dmol
 import numpy as np
-from rdkit import Chem
-from rdkit.Chem import AllChem
 from io import StringIO
 import pandas as pd
 import streamlit.components.v1 as components
 import subprocess
 import tempfile
 import os
+import sys
 
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+install('rdkit')
+install('py3Dmol')
+
+import py3Dmol
+from rdkit import Chem
+from rdkit.Chem import AllChem
 # Define the showmol function
 def showmol(view, width=800, height=500):
     """
